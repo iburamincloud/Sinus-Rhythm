@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    
+  }
+  .heart-rate {
+    background-color:black;
+    display: flex;
+    justify-content:center;
+    width: 1280px;
+    height: 350px;
+    position: relative;
+  }
+  
+  .fade-in {
+    display: flex;
+    justify-content:center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+    right: 0;
+    animation: heartRateIn 3.5s linear infinite;
+  }
+  
+  .fade-out {
+    background-color:black;
+    display: flex;
+    justify-content:center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 3.5s linear infinite;
+  }
+  
+  @keyframes heartRateIn {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes heartRateOut {
+    0% {
+      left: -120%;
+    }
+    30% {
+      left: -120%;
+    }
+    100% {
+      left: 0;
+    }
+  }
