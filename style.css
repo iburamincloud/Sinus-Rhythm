@@ -1,27 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     background-color: #000000;
 }
-.container{
-    display:flex;
-    justify-content:center;
-    
-  }
-  .heart-rate {
-    background-color:black;
+.container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
+}
+.heart-rate {
+    background-color: black;
+    display: flex;
+    justify-content: center;
     width: 1280px;
     height: 350px;
     position: relative;
-  }
-  
-  .fade-in {
+}
+
+.fade-in {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -29,12 +28,12 @@ body{
     top: 0;
     right: 0;
     animation: heartRateIn 2.5s linear infinite;
-  }
-  
-  .fade-out {
-    background-color:black;
+}
+
+.fade-out {
+    background-color: black;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -42,33 +41,58 @@ body{
     left: -120%;
     animation: heartRateOut 2.5s linear infinite;
     background: rgb(0, 0, 0);
-    background: -moz-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
-    background: -webkit-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
-    background: -o-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
-    background: -ms-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
-    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 80%, rgba(255, 255, 255, 0) 100%);
-  }
-  
-  @keyframes heartRateIn {
+    background: -moz-linear-gradient(
+        left,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    background: -o-linear-gradient(
+        left,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    background: -ms-linear-gradient(
+        left,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background: linear-gradient(
+        to right,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 80%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+@keyframes heartRateIn {
     0% {
-      width: 100%;
+        width: 100%;
     }
     50% {
-      width: 0;
+        width: 0;
     }
     100% {
-      width: 0;
+        width: 0;
     }
-  }
-  
-  @keyframes heartRateOut {
+}
+
+@keyframes heartRateOut {
     0% {
-      left: -120%;
+        left: -120%;
     }
     30% {
-      left: -120%;
+        left: -120%;
     }
     100% {
-      left: 0;
+        left: 0;
     }
-  }
+}
